@@ -35,7 +35,7 @@ def edit_seq_list(seq_list: list[str],
 
 def contains_ncAA(seq: str) -> bool:
     """
-    Checks a sequence (str) to see if it contains any ncAAs.
+    Checks a sequence (str) to see if it contains any non-canonical amino acids (ncAA).
     :param seq: The sequence to check
     :return: True if contains ncAA, False otherwise.
     """
