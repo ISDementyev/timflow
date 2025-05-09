@@ -1,18 +1,16 @@
-def read_seqs_from_csv(csv_file) -> list[str]:
+def read_seqs_from_csv(file) -> list[str]:
     """
-    Reads protein sequences from a specific csv file.
-    Should be edited depending on how sequences are stored in your csv.
-    :param csv_file:
+    Reads protein sequences from a specific file.
+    Should be edited depending on how sequences are stored in your file.
+    :param file: The file with your sequences
     :return: List of sequences
     """
     seqs = []
 
-    with open(csv_file) as f:
+    with open(file) as f:
         lines = f.readlines()
         # print(lines[:10])
         seqs = [line.split(",")[1] for line in lines[1:]]
-
-    # seqs = [seq for seq in seqs if not contains_ncAA(seq)]
 
     return seqs
 
