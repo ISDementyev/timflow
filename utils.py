@@ -50,10 +50,10 @@ def contains_ncAA(seq: str) -> bool:
 
 if __name__ == "__main__":
     # testing
-    all_trainable_seqs = read_seqs_from_csv("pdb_redesigned.csv")
-    edited_list = edit_seq_list(all_trainable_seqs, remove_ncAA=True)
+    all_seqs = read_seqs_from_csv("pdb_redesigned.csv")
+    edited_list = edit_seq_list(all_seqs, remove_ncAA=True)
 
     # training factor
     train_percent = 0.8
-    print(len(all_trainable_seqs[:]))
+    print(len(all_seqs[:]))
 
