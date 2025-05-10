@@ -54,6 +54,6 @@ if __name__ == "__main__":
     edited_list = edit_seq_list(all_seqs, remove_ncAA=True)
 
     # training factor
-    train_percent = 0.8
+    train, test, validation = 0.8, 0.1, 0.1
     print(len(all_seqs[:]))
 
